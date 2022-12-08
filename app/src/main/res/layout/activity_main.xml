@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:id="@+id/edit_text"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:textSize="25sp"
+       android:hint="Введите сообщение"
+       android:layout_margin="15dp"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        android:id="@+id/text_view"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edit_text"
+        android:id="@+id/edit_text2"
+        android:textSize="25sp"
+        android:layout_margin="15dp"
+        android:inputType="number"
+        android:hint="Введите количество"
+        />
+    <Button
+        android:id="@+id/button"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_text2"
+        android:layout_margin="15dp"
+        android:text="Send"
+        android:textSize="25sp"
+      />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
